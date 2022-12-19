@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"/>
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/7ef55c44b8.js" crossorigin="anonymous"></script>
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -21,33 +23,33 @@
     <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
       <ul class="nav flex-column text-white w-100">
         <img src="./assets/img/logo.png" alt="logo" width="70%" class="justify-content-center mx-auto py-2">
-        <li href="#" class="nav-link">
+        <li onclick="klikhome()" class="nav-link">
           <i class="fa-solid fa-house"></i>
           <span class="mx-2">Home</span>
         </li>
-        <li href="#" class="nav-link">
+        <li onclick="klikartikel()" class="nav-link">
           <i class="fa-solid fa-newspaper"></i>
           <span class="mx-2">Artikel</span>
         </li>
-        <li href="#" class="nav-link">
+        <li onclick="klikevent()" class="nav-link">
           <i class="fa-solid fa-calendar-days"></i>
           <span class="mx-2">Event</span>
         </li>
-        <li href="#" class="nav-link">
+        <li onclick="klikgaleri()" class="nav-link">
           <i class="fa-solid fa-images"></i>
           <span class="mx-2">Galery Foto</span>
         </li>
-        <li href="#" class="nav-link">
+        <li onclick="klikklien()" class="nav-link">
           <i class="fa-solid fa-handshake"></i>
           <span class="mx-2">Klien Kami</span>
         </li>
         <hr class="hr-side my-3">
         <small class="my-0 px-3" style="font-weight: bold; opacity: 80%;">LOGIN</small>
-        <li href="#" class="nav-link">
+        <li href="#" class="nav-link disabled">
           <i class="fa-solid fa-user-check"></i>
           <span class="mx-2">Sign In</span>
         </li>
-        <li href="#" class="nav-link">
+        <li href="#" class="nav-link disabled">
           <i class="fa-solid fa-user-plus"></i>
           <span class="mx-2">Sign Up</span>
         </li>
@@ -69,13 +71,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" style="color: #383838; font-weight: bold;" aria-current="page" href="#profile">Profile</a>
+                  <a class="nav-link" style="color: #383838; font-weight: bold;" aria-current="page" onclick="klikprofile()">Profile</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" style="color: #383838; font-weight: bold;" href="#visimisi">Visi dan Misi</a>
+                  <a class="nav-link" style="color: #383838; font-weight: bold;" onclick="klikvisimisi()">Visi dan Misi</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" style="color: #383838; font-weight: bold;" href="#produk">Produk Kami</a>
+                  <a class="nav-link" style="color: #383838; font-weight: bold;" onclick="klikproduk()">Produk Kami</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" style="color: #383838; font-weight: bold;" href="#kontak">Kontak Kami</a>
@@ -90,159 +92,7 @@
       </div>
       <!--End Top Nav -->
       <div class="container px-5">
-        <div class="pt-2">
-          <img src="./assets/img/jbt.jpg" class="img-fluid" alt="" srcset="">
-        </div>
-        <!-- profile  -->
-      <section id="profile">
-        <br><br><br><br><br><br>
-          <h2>Profile</h2>
-          <div class="row">
-            <div class="col-8">
-              <p class="lh-hg">SSFC adalah singkatan dari Situbondo Scooter Fans Club. Kami merupakan klub atau persatuan pecinta scooter baik scooter edisi classic, retro, vintage maupun scooter matic edisi baru.</p>
-              <h4>Sejarah Situbondo Scooter Fans Club</h4>
-              <p>Club ini didirikan pada tanggal 12 Desember 2022 di Kabupaten Situbondo, Jawa Timur. Tujuan berdirinya SSFC adalah untuk menyatukan pecinta motor scooter yang berada di Kabupaten Situbondo menjadi lebih solid serta mengembangkan anggota menjadi kreatif dan berkarya.</p>
-              <h4>Pengalaman</h4>
-              <ul>
-                <li>Tour bersama dalam acara Situbondo Ethnic Festival.</li>
-                <li>Tour bersama club motor sebelah.</li>
-              </ul>
-              <h4>Kelebihan</h4>
-              <ul>
-                <li>Tour bersama dalam acara Situbondo Ethnic Festival.</li>
-                <li>Tour bersama club motor sebelah.</li>
-              </ul>
-            </div>
-            <div class="col-4">
-              <img src="./assets/img/logo.png" alt="logo" width="100%" srcset="">
-            </div>
-          </div>
-        </section>
-        <!-- end profile  -->
-        <!-- visi misi  -->
-        <section id="visimisi">
-          <br><br><br><br><br><br>
-          <h2>Visi & Misi</h2>
-          <h3 class="text-center">- - - Visi - - -</h3>
-          <p class="text-center">Menjadikan SSFC suatu wadah untuk menyatukan pecinta motor scooter yang berada di Kabupaten Situbondo menjadi lebih solid serta mengembangkan anggota menjadi kreatif dan berkarya.</p>
-          <h3 class="text-center">- - - Misi - - -</h3>
-          <ol>
-            <li>Merangkul semua komunitas scooter yang berada di Kabupaten Situbondo agar menjadi komunitas yang bermanfaat dan berguna bagi masyarakat serta menjadi contoh yang baik bagi Komunitas lain dan bagi masyarakat.</li>
-            <li>Turut berpartisipasi Dan mengempanyekan Safety Riding kepada komunitas scooter serta masyarakat agar dapat memahami arti keselamatan dalam berkendara.</li>
-            <li>Menjadikan SSFC sebagai fasilitator pengembangan komunitas untuk berkreasi dan berkarya untuk menjadi komunitas yang mandiri.</li>
-          </ol>
-        </section>
-        <!-- end visi misi  -->
-        <!-- produk  -->
-        <section id="produk">
-          <br><br><br><br><br><br>
-          <h2>Produk Kami</h2>
-          <h4 class="py-2">Persewaan Motor Scooter</h4>
-          <div class="row">
-            <div class="col">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./assets/img/V1.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Sewa Motor Vespa Scooter Klasik</h5>
-                      <p class="card-text">Mulai dari Rp.150.000,- per hari</p>
-                      <a href="https://wa.me/?6282229337599?text=Saya%20mengunjungi%20halaman%20web%20SSFC.%20Saya%20berencana%20menyewa%20motor."><i class="fa-brands fa-whatsapp"></i> Pesan Sekarang</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./assets/img/V2.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Sewa Motor Vespa Scooter Matic</h5>
-                      <p class="card-text">Mulai dari Rp.200.000,- per hari</p>
-                      <a href="https://wa.me/?6282229337599?text=Saya%20mengunjungi%20halaman%20web%20SSFC.%20Saya%20berencana%20menyewa%20motor."><i class="fa-brands fa-whatsapp"></i> Pesan Sekarang</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h4 class="py-2">Produk Lainnya</h4>
-          <div class="row">
-            <div class="col-6">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./assets/img/logo.png" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Stiker Club Berwarna</h5>
-                      <p class="card-text">Mulai dari Rp.2000,-</p>
-                      <a href="https://wa.me/?6282229337599?text=Saya%20mengunjungi%20halaman%20web%20SSFC.%20Saya%20berencana%20membeli%20produk."><i class="fa-brands fa-whatsapp"></i> Pesan Sekarang</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./assets/img/logo-grayscale.png" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Stiker Club Grayscale</h5>
-                      <p class="card-text">Mulai dari Rp.1500,-</p>
-                      <a href="https://wa.me/?6282229337599?text=Saya%20mengunjungi%20halaman%20web%20SSFC.%20Saya%20berencana%20membeli%20produk."><i class="fa-brands fa-whatsapp"></i> Pesan Sekarang</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./assets/img/helm1.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Helm Vespa Sporty</h5>
-                      <p class="card-text">Rp. 1.200.000,-</p>
-                      <a href="https://wa.me/?6282229337599?text=Saya%20mengunjungi%20halaman%20web%20SSFC.%20Saya%20berencana%20membeli%20produk."><i class="fa-brands fa-whatsapp"></i> Pesan Sekarang</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./assets/img/helm2.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Helm Bogo</h5>
-                      <p class="card-text">Rp. 120.000,-</p>
-                      <a href="https://wa.me/?6282229337599?text=Saya%20mengunjungi%20halaman%20web%20SSFC.%20Saya%20berencana%20membeli%20produk."><i class="fa-brands fa-whatsapp"></i> Pesan Sekarang</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </section>
-        <!-- end produk  -->
+        <section id="konten"></section>
       </div>
       <br><br><br>
       <footer class="bg-light text-center text-lg-start">
@@ -299,6 +149,34 @@
         sidebar.classList.toggle("active-nav");
         container.classList.toggle("active-cont");
       });
+    </script>
+    <!-- spa  -->
+    <script>
+    $("#konten").load("pages/home.html");
+    function klikartikel(){
+      $("#konten").load("pages/artikel.html");
+    }
+    function klikevent(){
+      $("#konten").load("pages/event.html");
+    }
+    function klikgaleri(){
+      $("#konten").load("pages/galeri.html");
+    }
+    function klikklien(){
+      $("#konten").load("pages/klien.html");
+    }
+    function klikprofile(){
+      $("#konten").load("pages/profile.html");
+    }
+    function klikvisimisi(){
+      $("#konten").load("pages/visimisi.html");
+    }
+    function klikproduk(){
+      $("#konten").load("pages/produk.html");
+    }
+    function klikhome(){
+      $("#konten").load("pages/home.html");
+    }
     </script>
   </body>
 </html>
